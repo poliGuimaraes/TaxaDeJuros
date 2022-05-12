@@ -20,9 +20,9 @@ namespace TaxasDeJuros.Controllers
         }
 
         [HttpGet]
-        public int TaxasDeJuros()
+        public decimal TaxasDeJuros()
         {
-            int taxa = 1;
+            decimal taxa = Convert.ToDecimal(0.01);
             return taxa;
         }
     }
