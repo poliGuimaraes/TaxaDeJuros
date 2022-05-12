@@ -20,14 +20,10 @@ namespace TaxasDeJuros.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<TaxasDeJurosResponse> TaxasDeJuros()
+        public int TaxasDeJuros()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 1).Select(index => new TaxasDeJurosResponse
-            {
-                TaxasDeJuros = "A taxa de juros atual é de: 1 % ao mês!"
-            })
-            .ToArray();
+            int taxa = 1;
+            return taxa;
         }
     }
 }
